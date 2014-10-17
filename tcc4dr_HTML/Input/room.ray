@@ -1,0 +1,357 @@
+#camera 0.0 300.0 500.0   0.0 -.5 -1.0   0.0 1.0 -1.0   .523
+#background 0.0 0.0 0.1
+#ambient 0.5 0.5 0.5 
+#ray_file_num 10
+#ray_file ./tcc4dr_HTML/Input/dinner_table.ray
+#ray_file ./tcc4dr_HTML/Input/chair.ray
+#ray_file ./tcc4dr_HTML/Input/couch.ray
+#ray_file ./tcc4dr_HTML/Input/chandelier.ray
+#ray_file ./tcc4dr_HTML/Input/vase.ray
+#ray_file ./tcc4dr_HTML/Input/table_stand.ray
+#ray_file ./tcc4dr_HTML/Input/piano.ray
+#ray_file ./tcc4dr_HTML/Input/tv.ray
+#ray_file ./tcc4dr_HTML/Input/candle.ray
+#ray_file ./tcc4dr_HTML/Input/toyplane.ray
+#texture_num 4
+#texture ./tcc4dr_HTML/Input/FightClub.jpg
+#texture ./tcc4dr_HTML/Input/floor.jpg
+#texture ./tcc4dr_HTML/Input/ceiling.jpg
+#texture ./tcc4dr_HTML/Input/wall.jpg
+#light_num 6
+#light_dir
+	 .7  .7  .7
+	-1.0 -1.0 -1.0
+#light_point
+	 0.4  0.0  0.0
+	 -50  80  150
+	 1.0  0.045  0.0075
+#light_point
+	 0.3  0.1  0.0
+	 -25  80  150
+	 1.0  0.045  0.0075
+#light_point
+	 0.2  0.2  0.0
+	 0.0  80  150
+	 1.0  0.045  0.0075
+#light_point
+	 0.0  0.2  0.0
+	 25  80  150
+	 1.0  0.045  0.0075
+#light_point
+	 0.0  0.0  0.2
+	 50  80  150
+	 1.0  0.045  0.0075
+#material_num 5
+#material
+	0.0 0.0 0.0
+	0.3 0.3 0.3
+	0.9 0.9 0.9
+	1.0 1.0 1.0 100
+	0.0 0.0 0.0
+	1.05
+	-1
+	!!
+#material
+	0.0 0.0 0.0
+	0.3 0.3 0.3
+	0.1 0.1 0.1
+	1.0 1.0 1.0 100
+	0.0 0.0 0.0
+	1.05
+	0
+	!!
+#material
+	0.0 0.0 0.0
+	0.3 0.3 0.3
+	0.7 0.3 0.1
+	1.0 1.0 1.0 100
+	0.0 0.0 0.0
+	1.05
+	1
+	!!
+#material
+	0.0 0.0 0.0
+	0.3 0.3 0.3
+	0.7 0.3 0.1
+	1.0 1.0 1.0 100
+	0.0 0.0 0.0
+	1.05
+	2
+	!!
+#material
+	0.0 0.0 0.0
+	0.3 0.3 0.3
+	0.7 0.3 0.1
+	1.0 1.0 1.0 100
+	0.0 0.0 0.0
+	1.05
+	3
+	!!
+#vertex_num 4
+#vertex
+	-1  0  1
+	 0  1  0
+	 0  1
+#vertex
+	 1  0  1
+	 0  1  0
+	 1  1
+#vertex
+	 1  0 -1
+	 0  1  0
+	 1  0
+#vertex
+	-1  0 -1
+	 0  1  0
+	 0  0
+
+#group_begin
+	0.2 0.0 0.0 0.0
+        0.0 0.0 0.2 0.0
+        0.0 -0.2 0.0 150
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 0
+#group_end
+
+#group_begin
+	1.0 0.0 0.0 -35
+        0.0 1.0 0.0 0.0
+        0.0 0.0 1.0 110
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 1
+#group_end
+
+#group_begin
+	1.0 0.0 0.0 35
+        0.0 1.0 0.0 0.0
+        0.0 0.0 1.0 110
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 1
+#group_end
+
+#group_begin
+	-1.0 0.0 0.0 -35
+        0.0 1.0 0.0 0.0
+        0.0 0.0 -1.0 190
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 1
+#group_end
+
+#group_begin
+	-1.0 0.0 0.0 35
+        0.0 1.0 0.0 0.0
+        0.0 0.0 -1.0 190
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 1
+#group_end
+
+#group_begin
+	0.0 0.0 0.8 -200
+        0.0 0.8 0.0 0.0
+       -0.8 0.0 0.0 150
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 2
+#group_end
+
+#group_begin
+	0.0 0.0 -0.8 200
+        0.0 0.8 0.0 0.0
+        0.8 0.0 0.0 150
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 2
+#group_end
+
+#group_begin
+	1.0 0.0 0.0 -220
+	0.0 1.0 0.0 150
+	0.0 0.0 1.0 -68
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 3
+#group_end
+
+#group_begin
+	4.0 0.0 0.0 -170
+	0.0 4.0 0.0 0.0
+	0.0 0.0 4.0 290
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 4
+#group_end
+
+#group_begin
+	5.0 0.0 0.0 0.0
+	0.0 5.0 0.0 0.0
+	0.0 0.0 5.0 310
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 5
+#group_end
+
+#group_begin
+	-.1 0.0 0.0 -100
+	0.0 0.0 0.1 0.0
+        0.0 0.1 0.0 -170
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 6
+#group_end
+
+#group_begin
+	1 0.0 0.0 0.0
+	0.0 1 0.0 70
+        0.0 0.0 1 150
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 8
+#group_end
+
+#group_begin
+	1 0.0 0.0 25
+	0.0 1 0.0 70
+        0.0 0.0 1 150
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 8
+#group_end
+
+#group_begin
+	1 0.0 0.0 50
+	0.0 1 0.0 70
+        0.0 0.0 1 150
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 8
+#group_end
+
+#group_begin
+	1 0.0 0.0 -25
+	0.0 1 0.0 70
+        0.0 0.0 1 150
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 8
+#group_end
+
+#group_begin
+	1 0.0 0.0 -50
+	0.0 1 0.0 70
+        0.0 0.0 1 150
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 8
+#group_end
+
+#group_begin
+	 1 0.0 0.0 0.0
+	 0.0 1.0 0.0 0.0
+	 0.0 0.0 1 0.0
+	 0.0 0.0 0.0 1.0
+	#ray_file_instance 9
+#group_end
+
+#group_begin
+	.707 0 -.707 150
+	0 1 0 0
+	.707 0 .707 -150
+	0 0 0 1
+#group_begin
+	-6.2 0.0 0.0 0.0
+	0.0 6.2 0.0 0.0
+	0.0 0.0 -6.2 0.0
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 5
+#group_end
+#group_begin
+	.15 0.0 0.0 0.0
+	0.0 .15 0.0 75
+        0.0 0.0 .15 0.0
+	0.0 0.0 0.0 1.0
+	#ray_file_instance 7
+#group_end
+#group_begin
+	 78 0.0 0.0 0.0
+	 0.0 0.0 -45.0 140.0
+	 0.0 1.0 0.0  8
+	 0.0 0.0 0.0 1.0
+	#shape_triangle 1
+	0 1 2
+	#shape_triangle 1
+	0 2 3
+#group_end
+#group_end
+
+#group_begin
+	 -250 0.0 0.0 0.0
+	 0.0 -1.0 0.0 212
+	 0.0 0   350 0.0
+	 0.0 0.0 0.0 1.0
+	#shape_triangle 3
+	0 1 2
+	#shape_triangle 3
+	0 2 3
+#group_end
+
+#group_begin
+	0 0 1 0
+	0 1 0 0
+	-1 0 0 0
+	0 0 0 1
+#group_begin
+	350 0 0 0
+	0 0 -106 106
+	0 1 0 -250
+	0 0 0 1
+	#shape_triangle 4
+	0 1 2
+	#shape_triangle 4
+	0 2 3
+#group_end
+#group_end
+
+#group_begin
+	0 0 -1 0
+	0 1 0 0
+	1 0 0 0
+	0 0 0 1
+#group_begin
+	350 0 0 0
+	0 0 -106 106
+	0 1 0 -250
+	0 0 0 1
+	#shape_triangle 4
+	0 1 2
+	#shape_triangle 4
+	0 2 3
+#group_end
+#group_end
+
+#group_begin
+	250 0 0 0
+	0 0 -106 106
+	0 1 0 -350
+	0 0 0 1
+	#shape_triangle 4
+	0 1 2
+	#shape_triangle 4
+	0 2 3
+#group_end
+
+#group_begin
+	-1 0 0 0
+	0 1 0 0
+	0 0 -1 0
+	0 0 0 1
+#group_begin
+	250 0 0 0
+	0 0 -106 106
+	0 1 0 -350
+	0 0 0 1
+	#shape_triangle 4
+	0 1 2
+	#shape_triangle 4
+	0 2 3
+#group_end
+#group_end
+	
+#group_begin
+	 250 0.0 0.0 0.0
+	 0.0 1.0 0.0 0.0
+	 0.0 0.0 350 0.0
+	 0.0 0.0 0.0 1.0
+	#shape_triangle 2
+	0 1 2
+	#shape_triangle 2
+	0 2 3
+#group_end

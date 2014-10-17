@@ -1,0 +1,18 @@
+#camera 0.0 600.0 600.0   0.0 -1.0 -1.0   0.0 1.0 -1.0   .523  
+#background 0.2 0.2 0.2
+#ambient 0.5 0.5 0.5 
+#ray_file_num 1
+#ray_file ./tcc4dr_HTML/Input/couch.ray
+#light_num 1
+#light_dir
+	 1.0  1.0  1.0
+	-1.0 -1.0  0.0
+#group_begin
+	1 0 0 0
+	0 1 0 0
+	0 0 1 0
+	0 0 0 1
+	#ray_file_instance 0
+#group_end
+
+
